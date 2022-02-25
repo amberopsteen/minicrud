@@ -5,8 +5,7 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Grill masters</title>
-    <link rel="icon" type="media/favicon" href="media/logo.png" />
+    <title>Grillmasters</title>
   </head>
   <body>
     <ul>
@@ -18,16 +17,22 @@
       <li><a href="login.php">Login</a></li>
     </ul>
     <div class="carousel">
-  <div class="carousel-item">
-    <div class="first"></div>
-  </div>
-  <div class="carousel-item">
-    <div class="second"></div>
-  </div>
-  <div class="carousel-item">
-    <div class="third"></div>
-  </div>
-</div>
+      <div class="carousel-item">
+        <div class="first">
+          <h3>The fine art of grilling</h3>
+        </div>
+      </div>
+      <div class="carousel-item">
+        <div class="second">
+          <h3>Best quality steak</h3>
+        </div>
+      </div>
+      <div class="carousel-item">
+        <div class="third">
+          <h3>Delicious drinks</h3>
+        </div>
+      </div>
+    </div>
     <script src="js/main.js"></script>
   </body>
 </html>
