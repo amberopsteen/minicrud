@@ -10,24 +10,22 @@
   </head>
   <body>
     <ul>
-      <h1>grillmasters</h1>
+    <h1>grill masters</h1>
       <li><a href="index.php">Home</a></li>
       <li><a href="menu.php">Menu</a></li>
       <li><a href="reserveren.php">Reserveren</a></li>
       <li><a href="contact.php">Contact</a></li>
       <li><a href="login.php">Login</a></li>
     </ul>
-    <div class="carousel">
-  <div class="carousel-item">
-    <div class="first"></div>
-  </div>
-  <div class="carousel-item">
-    <div class="second"></div>
-  </div>
-  <div class="carousel-item">
-    <div class="third"></div>
-  </div>
-</div>
-    <script src="js/main.js"></script>
+    <div class="contact">
+      <form class="form">
+        <h2>CONTACT US</h2>
+        <p type="Naam:"><input placeholder="Uw naam"></input></p>
+        <p type="E-mail:"><input placeholder="Uw e-mailadres"></input></p>
+        <p type="Bericht"><input placeholder="Typ hier uw bericht"></input></p>
+        <button>Verzenden</button>
+      </form>
+      
+    </div>
   </body>
 </html>
