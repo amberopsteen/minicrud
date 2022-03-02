@@ -8,14 +8,19 @@
     <title>Grillmasters</title>
   </head>
   <body>
+  <div class="navbar">
     <ul>
-    <h1>grillmasters</h1>
+    <div class="logo">
+          <h1>on.the.stone</h1>
+          <p>Grill and drinks</p>
+        </div>
       <li><a href="index.php">Home</a></li>
       <li><a href="menu.php">Menu</a></li>
       <li><a href="reserveren.php">Reserveren</a></li>
       <li><a href="contact.php">Contact</a></li>
       <li><a href="login.php">Login</a></li>
     </ul>
+    </div>
     <div class="contact">
       <form class="form">
         <h2>CONTACT US</h2>
@@ -24,7 +29,6 @@
         <p type="Bericht"><input placeholder="Typ hier uw bericht"></input></p>
         <button>Verzenden</button>
       </form>
-      
     </div>
   </body>
 </html>
