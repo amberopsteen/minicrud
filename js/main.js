@@ -25,3 +25,18 @@ window.onload = function () {
     }
   }, 4000);
 };
+
+document.onscroll = function () {
+  let y = window.pageYOffset;
+
+  if (y === 0) {
+    document.getElementById("navbar").classList.remove("fade-in");
+    document.getElementById("navbar").classList.add("fade-out");
+  } else {
+    document.getElementById("navbar").classList.remove("fade-out");
+    document.getElementById("navbar").classList.add("fade-in");
+  }
+
+};
+
+

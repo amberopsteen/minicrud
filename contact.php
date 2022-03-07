@@ -8,7 +8,7 @@
     <title>Grillmasters</title>
   </head>
   <body>
-  <div class="navbar">
+  <div id="navbar" class="navbar">
     <ul>
     <div class="logo">
           <h1>on.the.stone</h1>
@@ -16,7 +16,7 @@
         </div>
       <li><a href="index.php">Home</a></li>
       <li><a href="menu.php">Menu</a></li>
-      <li><a href="reserveren.php">Reserveren</a></li>
+      <li><a href="reserveren.php">Reserve a table</a></li>
       <li><a href="contact.php">Contact</a></li>
       <li><a href="login.php">Login</a></li>
     </ul>
@@ -30,5 +30,6 @@
         <button>Verzenden</button>
       </form>
     </div>
+    <script src="js/main.js"></script>
   </body>
 </html>

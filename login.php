@@ -8,52 +8,41 @@
     <title>Grillmasters</title>
   </head>
   <body>
-  <div class="navbar">
-    <ul>
-	<div class="logo">
+    <div id="navbar" class="navbar">
+      <ul>
+        <div class="logo">
           <h1>on.the.stone</h1>
           <p>Grill and drinks</p>
         </div>
-      <li><a href="index.php">Home</a></li>
-      <li><a href="menu.php">Menu</a></li>
-      <li><a href="reserveren.php">Reserveren</a></li>
-      <li><a href="contact.php">Contact</a></li>
-      <li><a href="login.php">Login</a></li>
-    </ul>
+        <li><a href="index.php">Home</a></li>
+        <li><a href="menu.php">Menu</a></li>
+        <li><a href="reserveren.php">Reserve a table</a></li>
+        <li><a href="contact.php">Contact</a></li>
+        <li><a href="login.php">Login</a></li>
+      </ul>
     </div>
     <div class="container">
-	<div class="screen">
-		<div class="screen__content">
-			<form class="login">
-				<div class="login__field">
-					<i class="login__icon fas fa-user"></i>
-					<input type="text" class="login__input" placeholder="Gebruikersnaam / E-mail">
-				</div>
-				<div class="login__field">
-					<i class="login__icon fas fa-lock"></i>
-					<input type="password" class="login__input" placeholder="Wachtwoord">
-				</div>
-				<button class="button login__submit">
-					<span class="button__text">log in</span>
-					<i class="button__icon fas fa-chevron-right"></i>
-				</button>				
-			</form>
-			<div class="social-login">
-				<div class="social-icons">
-					<a href="#" class="social-login__icon fab fa-instagram"></a>
-					<a href="#" class="social-login__icon fab fa-facebook"></a>
-					<a href="#" class="social-login__icon fab fa-twitter"></a>
-				</div>
-			</div>
-		</div>
-		<div class="screen__background">
-			<span class="screen__background__shape screen__background__shape4"></span>
-			<span class="screen__background__shape screen__background__shape3"></span>		
-			<span class="screen__background__shape screen__background__shape2"></span>
-			<span class="screen__background__shape screen__background__shape1"></span>
-		</div>		
-	</div>
-</div>
-<script src="js/main.js"></script>
+      <div class="main">
+        <input type="checkbox" id="chk" aria-hidden="true" />
+        <div class="login">
+          <form>
+            <label for="chk" aria-hidden="true">Log in</label>
+            <input 
+				type="email" 
+				name="email" 
+				placeholder="Email" 
+				required="" />
+            <input
+              type="password"
+              name="pswd"
+              placeholder="Password"
+              required=""
+            />
+            <button>Log in</button>
+          </form>
+        </div>
+      </div>
+    </div>
+    <script src="js/main.js"></script>
   </body>
 </html>
