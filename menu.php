@@ -1,48 +1,14 @@
-<!DOCTYPE html>
-<html lang="en">
-  <head>
-    <link rel="stylesheet" href="css/styles.css" />
-    <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link
-      rel="stylesheet"
-      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
-    />
-    <title>Grillmasters</title>
-  </head>
-  <body>
-    <div id="navbar" class="navbar">
-      <ul>
-        <div class="logo">
-          <h1>on.the.stone</h1>
-          <p>Grill and drinks</p>
-        </div>
-        <li><a href="index.php">Home</a></li>
-        <li><a href="menu.php">Menu</a></li>
-        <li><a href="reserveren.php">Reserve a table</a></li>
-        <li><a href="contact.php">Contact</a></li>
-        <li><a href="login.php">Login</a></li>
-      </ul>
-    </div>
+<?php
+      include("includes/header.php")
+    ?>
     <div class="titel_menu">
       <h3>menu</h3>
-    </div>
-    <div class="filter">
-      <form
-        class="example"
-        action="/action_page.php"
-        style="margin: auto; max-width: 300px"
-      >
-        <input type="text" placeholder="Search.." name="search2" />
-        <button type="submit"><i class="fa fa-search"></i></button>
-      </form>
-    </div>
+</div>
     <div class="gerecht_titel">
       <h3>meat dishes</h3>
     </div>
     <div class="menu">
-      <div class="container1">
+      <div class="dish">
         <div class="images">
           <img id="tournedos" src="./media/menu_5.jpg" />
         </div>
@@ -57,7 +23,7 @@
           </div>
         </div>
       </div>
-      <div class="container1">
+      <div class="dish">
         <div class="images">
           <img src="./media/menu_6.jpg" />
         </div>
@@ -70,7 +36,7 @@
           </div>
         </div>
       </div>
-      <div class="container1">
+      <div class="dish">
         <div class="images">
           <img src="./media/menu_3.jpg" />
         </div>
@@ -85,7 +51,7 @@
           </div>
         </div>
       </div>
-      <div class="container1">
+      <div class="dish">
         <div class="images">
           <img src="./media/menu.jpg" />
         </div>
@@ -107,7 +73,7 @@
       <h3>fish dishes</h3>
     </div>
     <div class="menu">
-      <div class="container1">
+      <div class="dish">
         <div class="images">
           <img id="tournedos" src="./media/menu_7.jpg" />
         </div>
@@ -120,7 +86,7 @@
           </div>
         </div>
       </div>
-      <div class="container1">
+      <div class="dish">
         <div class="images">
           <img src="./media/menu_6.jpg" />
         </div>
@@ -138,7 +104,7 @@
       <h3>vegetables dishes</h3>
     </div>
     <div class="menu">
-      <div class="container1">
+      <div class="dish">
         <div class="images">
           <img id="tournedos" src="./media/menu_groente.jpg" />
         </div>
@@ -151,7 +117,7 @@
           </div>
         </div>
       </div>
-      <div class="container1">
+      <div class="dish">
         <div class="images">
           <img src="./media/menu_6.jpg" />
         </div>
