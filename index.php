@@ -35,19 +35,19 @@
     <div class="image">
     <div class="reserveer">
     <div class="contact1">
-      <form1 class="form1">
+      <form class="form1">
         <h2>book your table here</h2>
         <p type="Name:"><input placeholder="Type your name.."></input></p>
         <p type="Email:"><input placeholder="Type your email.."></input></p>
         <p type="Message:"><input placeholder="Type your message here.."></input></p>
         <button>Send</button>
-      </form1>
+      </form>
     </div>
     </div>
-    <footer>
-      <div class="footer"></div>
-    </footer>
     </div>
+    <?php
+      include("includes/footer.php")
+    ?>
     <script src="js/main.js"></script>
   </body>
 </html>

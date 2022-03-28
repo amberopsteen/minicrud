@@ -27,9 +27,9 @@
   justify-content: flex-end;
   flex-direction: row;
   list-style-type: none;
-  padding-right: 60px;
+  padding-right: 30px;
   overflow: hidden;
-  margin-top: 20px;
+  margin-top: 10px;
   margin-bottom: 10px;
 }
 
@@ -37,12 +37,12 @@
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
-  margin-right: 42%;
+  margin-right: 38%;
+  margin-top: 5px;
   width: 180px;
   height: 47px;
   border: white;
   border-style: solid;
-  margin-top: 5px;
 }
 
 .navbar ul .logo h1 {
@@ -77,10 +77,29 @@
   letter-spacing: 4px;
   font-family: Roboto, sans-serif;
   color: white;
+  transition: all 0.3s;
 }
 
 .navbar li a:hover {
   color: #c1b2a7;
+}
+
+@media only screen and (max-width: 1290px) {
+  .navbar ul .logo {
+    margin-right: 30%;
+  }
+}
+
+@media only screen and (max-width: 1160px) {
+  .navbar ul .logo {
+    margin-right: 0%;
+  }
+}
+
+@media only screen and (max-width: 900px) {
+  .navbar li a {
+    font-size: 10px;
+  }
 }
 
 /*index.php*/
@@ -93,14 +112,21 @@
 }
 
 .carousel .arrow {
+  display: flex;
+  align-items: center;
   position: relative;
   z-index: 190;
-  left: 750px;
+  left: 50%;
   top: 650px;
   background-image: url("../media/arrow.png");
   background-repeat: no-repeat;
   width: 100px;
   height: 100px;
+  transition: all 0.3s;
+}
+
+.carousel .arrow:hover {
+  background-image: url("../media/arrow3.png");
 }
 
 .carousel .carousel-item {
@@ -155,12 +181,12 @@
 }
 
 .favoriet {
-  position: relative;
-  z-index: 80;
   display: flex;
   justify-content: center;
+  flex-direction: column;
+  align-items: center;
   width: 100%;
-  height: 420px;
+  height: auto;
   background-color: black;
 }
 
@@ -188,6 +214,12 @@
   letter-spacing: 4px;
   font-family: Roboto, sans-serif;
   font-size: 10px;
+  transition: all 0.3s;
+}
+
+.favoriet .container_card .button:hover {
+  background-color: black;
+  color: white;
 }
 
 .favoriet .container_card h3 {
@@ -317,11 +349,12 @@
   margin: 8px 0 0;
   letter-spacing: 2px;
   font-family: Roboto, sans-serif;
-  border: 2px solid #c1b2a7;
+  border: 2px solid black;
   background: 0;
   cursor: pointer;
   transition: all 0.3s;
   color: white;
+  background-color: #0c1f1d;
 }
 
 .contact1 .form1 button:hover {
@@ -329,20 +362,8 @@
   color: #fff;
 }
 
-.footer {
-  position: relative;
-  z-index: 80;
-  top: 1000px;
-  display: flex;
-  justify-content: center;
-  width: 100%;
-  height: 200px;
-  background-color: black;
-  box-shadow: 5px 0px 26px 17px #000000;
-}
-
 /*login.php*/
-.login {
+.login_form {
   display: flex;
   align-items: center;
   justify-content: center;
@@ -359,7 +380,7 @@
   height: 100px;
   padding-top: 150px;
   padding-bottom: 35px;
-  background-color: #071112;
+  background-color: #0c1f1d;
 }
 
 .titel_menu h3 {
@@ -368,13 +389,79 @@
   letter-spacing: 4px;
   font-family: Roboto, sans-serif;
   font-size: 30px;
+  background-color: #0c1f1d;
+}
+.search_button {
+  position: absolute;
+  right: 8%;
+  top: 19%;
+  transform: translate(-50%);
+}
+
+.search-box input[type=text] {
+  border: none;
+  background: none;
+  z-index: 1;
+  width: 25px;
+  height: 25px;
+  transition: all 0.25s ease-in 0.25s;
+  color: transparent;
+  font-size: 0.75rem;
+  line-height: 25px;
+}
+.search-box input[type=text]:hover {
+  cursor: pointer;
+}
+.search-box input[type=text]:hover:focus {
+  cursor: text;
+}
+.search-box input[type=text]:hover + span {
+  background: rgba(255, 255, 255, 0.2);
+}
+.search-box input[type=text]:focus {
+  width: 200px;
+  padding: 0 10px;
+  outline: none;
+  color: black;
+  background: none;
+  color: white;
+}
+.search-box input[type=text]:focus + span {
+  width: 200px;
+}
+.search-box input[type=text]:focus + span::before {
+  width: 2px;
+  opacity: 0;
+  transition: all 0.25s ease-in;
+}
+.search-box input[type=text] + span {
+  z-index: -1;
+  position: absolute;
+  border: 2px solid white;
+  top: 0;
+  width: 25px;
+  height: 25px;
+  transition: all 0.25s ease-in 0.25s;
+  border-radius: 25px;
+  left: 0;
+}
+.search-box input[type=text] + span::before {
+  transition: all 0.25s ease-in 0.5s;
+  transform-origin: left top;
+  content: "";
+  position: absolute;
+  width: 10px;
+  height: 5px;
+  border-radius: 5px;
+  background: white;
+  transform: rotate(45deg) translate(26px, -2px);
 }
 
 .gerecht_titel {
   display: flex;
   justify-content: center;
   padding-top: 80px;
-  background-color: #071112;
+  background-color: #0c1f1d;
 }
 
 .gerecht_titel h3 {
@@ -390,7 +477,7 @@
   flex-wrap: wrap;
   width: 100%;
   height: auto;
-  background-color: #071112;
+  background-color: #0c1f1d;
 }
 
 .menu .dish {
@@ -402,6 +489,7 @@
   background: #f5f5f5;
   border-radius: 10px;
   margin-top: 60px;
+  background-color: #c3c3c3;
 }
 
 .menu .dish h2 {
@@ -439,7 +527,7 @@
   letter-spacing: 0;
   margin-top: 40px;
   margin-bottom: 105px;
-  color: #4e4e4e;
+  color: black;
   font-size: 0.7em;
   line-height: 1.6em;
   margin-right: 25px;
@@ -447,7 +535,8 @@
 }
 
 .menu .dish button {
-  background: #a6988e;
+  background: black;
+  color: white;
   padding: 10px;
   display: inline-block;
   outline: 0;
@@ -462,7 +551,8 @@
 }
 
 .menu .dish button:hover {
-  background: white;
+  background: #0c1f1d;
+  color: white;
   transition: all 0.4s ease-in-out;
 }
 
@@ -470,11 +560,327 @@
   width: 67%;
 }
 
+.empty_space {
+  width: 100%;
+  height: 120px;
+  background-color: #0c1f1d;
+}
+
 /*reserveren.php*/
 .reserveren {
-  background-color: #071112;
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  background-image: url("../media/bg1.jpeg");
   width: 100%;
   height: 100vh;
+  padding-right: 50px;
+}
+
+.contact2 {
+  width: 30%;
+  height: 400px;
+  color: white;
+  opacity: 0.8;
+}
+
+.contact2 .form1 {
+  width: 540px;
+  padding: 20px 30px;
+  max-width: calc(100vw - 40px);
+  box-sizing: border-box;
+  letter-spacing: 2px;
+  font-family: Roboto, sans-serif;
+  position: relative;
+}
+.contact2 .form1 h2 {
+  margin: 10px 0;
+  padding-bottom: 5px;
+  width: 180px;
+  border-bottom: 3px solid #c1b2a7;
+  text-transform: uppercase;
+  letter-spacing: 2x;
+  font-family: Roboto, sans-serif;
+  font-size: 15px;
+  color: white;
+}
+.contact2 .form1 input {
+  width: 100%;
+  padding: 10px;
+  box-sizing: border-box;
+  background: none;
+  outline: none;
+  resize: none;
+  border: 0;
+  letter-spacing: 2px;
+  font-family: Roboto, sans-serif;
+  transition: all 0.3s;
+  border-bottom: 2px solid #c1b2a7;
+  font-size: 10px;
+  color: white;
+}
+
+.contact2 .form1 input:focus {
+  border-bottom: 2px solid #c1b2a7;
+}
+
+.contact2 .form1 p:before {
+  content: attr(type);
+  display: block;
+  margin: 28px 0 0;
+  font-size: 14px;
+}
+
+.contact2 .form1 button {
+  padding: 8px 12px;
+  margin: 8px 0 0;
+  letter-spacing: 2px;
+  font-family: Roboto, sans-serif;
+  border: 2px solid black;
+  background-color: #202d33;
+  cursor: pointer;
+  transition: all 0.3s;
+  color: white;
+}
+
+.contact2 .form1 button:hover {
+  background: #c1b2a7;
+  color: black;
+}
+
+/*shoppingcart.php*/
+.shopping_cart {
+  display: flex;
+  justify-content: space-around;
+  flex-direction: column;
+  align-items: center;
+  width: 100%;
+  height: 100vh;
+  background-color: #0c1f1d;
+}
+
+.shopping_cart h2 {
+  color: white;
+  letter-spacing: 2px;
+  font-family: Roboto, sans-serif;
+}
+
+.shopping_cart p {
+  color: white;
+  letter-spacing: 2px;
+  font-family: Roboto, sans-serif;
+  padding-bottom: 150px;
+}
+
+/*footer*/
+.footer {
+  display: flex;
+  justify-content: space-around;
+  width: 100%;
+  height: 150px;
+  background-color: black;
+  box-shadow: 2px -4px 28px 13px #000000;
+  color: white;
+}
+
+.footer .openingstijden {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+}
+
+.footer .openingstijden h3 {
+  letter-spacing: 2px;
+  font-family: Roboto, sans-serif;
+  font-size: 14px;
+}
+
+.footer .openingstijden p {
+  letter-spacing: 2px;
+  font-family: Roboto, sans-serif;
+  font-size: 12px;
+}
+
+.footer .locatie {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+}
+
+.footer .locatie h3 {
+  letter-spacing: 2px;
+  font-family: Roboto, sans-serif;
+  font-size: 14px;
+}
+
+.footer .locatie p {
+  letter-spacing: 2px;
+  font-family: Roboto, sans-serif;
+  font-size: 12px;
+}
+
+.footer .socials {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.fa {
+  padding: 20px;
+  font-size: 40px;
+  width: 50px;
+  height: 50px;
+  text-align: center;
+  text-decoration: none;
+  margin: 5px 2px;
+}
+
+.fa:hover {
+    opacity: 0.7;
+}
+
+.fa-facebook {
+  background-color: #202d33;
+  color: white;
+}
+
+.fa-twitter {
+  background-color: #202d33;
+  color: white;
+}
+
+.fa-instagram {
+  background-color: #202d33;
+  color: white;
+}
+
+/*login button*/
+#mainButton {
+  color: white;
+  text-transform: uppercase;
+  letter-spacing: 4px;
+  font-family: Roboto, sans-serif;
+  overflow: hidden;
+  position: relative;
+}
+
+#mainButton .btn-text {
+  z-index: 2;
+  padding: 10px 10px;
+  margin-top: 5px;
+  position: relative;
+}
+
+#mainButton.active .modal {
+  animation: slide-in-bck-center 0.7s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
+}
+
+
+#mainButton .modal {
+  top: 0;
+  left: 0;
+  z-index: 3;
+  width: 100%;
+  height: 100%;
+  padding: 20px;
+  display: flex;
+  position: fixed;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  background-image: url("../media/light.jpg");
+  transform-origin: center center;
+  -webkit-transform: scale(0.000001, 0.00001);
+  -moz-transform: scale(0.000001, 0.00001);
+  -ms-transform: scale(0.000001, 0.00001);
+  -o-transform: scale(0.000001, 0.00001);
+  transform: scale(0.000001, 0.00001);
+  -webkit-transition: all 0.2s ease-in;
+  -moz-transition: all 0.2s ease-in;
+  -ms-transition: all 0.2s ease-in;
+  -o-transition: all 0.2s ease-in;
+  transition: all 0.2s ease-in;
+}
+
+.close-button {
+  top: 20px;
+  right: 20px;
+  position: absolute;
+  text-transform: uppercase;
+  font-size: 30px;
+  font-family: Roboto, sans-serif;
+}
+
+.form-title {
+  margin-bottom: 15px;
+  font-size: 30px;
+}
+
+.form-button {
+  width: 100%;
+  padding: 10px;
+  color: black;
+  background-color: white;
+  text-transform: uppercase;
+  letter-spacing: 4px;
+  font-family: Roboto, sans-serif;
+  margin-top: 10px;
+  max-width: 400px;
+  text-align: center;
+  border: solid 1px white;
+}
+
+.form-button:hover {
+  color: white;
+  cursor: pointer;
+  background-color: transparent;
+}
+
+.input-group {
+  width: 100%;
+  max-width: 400px;
+  padding-top: 20px;
+  position: relative;
+  margin-bottom: 15px;
+}
+.input-group input {
+  width: 100%;
+  color: white;
+  border: none;
+  outline: none;
+  padding: 5px 0;
+  line-height: 1;
+  text-transform: uppercase;
+  letter-spacing: 4px;
+  font-family: Roboto, sans-serif;
+  border-bottom: solid 1px white;
+  background-color: transparent;
+}
+.input-group input + label {
+  left: 0;
+  top: 20px;
+  position: absolute;
+  pointer-events: none;
+}
+
+
+.input-group input:focus + label, .input-group input.active + label {
+  font-size: 12px;
+  -webkit-transform: translateY(-20px);
+  -moz-transform: translateY(-20px);
+  -ms-transform: translateY(-20px);
+  -o-transform: translateY(-20px);
+  transform: translateY(-20px);
+}
+
+@media only screen and (max-width: 900px) {
+  #mainButton .btn-text {
+    font-size: 10px;
+  }
+}
+
+@media only screen and (max-width: 900px) {
+  
 }
 
 @keyframes text-focus-in {
@@ -520,3 +926,15 @@
     background-color: transparent;
   }
 }
+
+@keyframes slide-in-bck-center {
+  0% {
+    transform: translateZ(600px);
+    opacity: 0;
+  }
+  100% {
+    transform: translateZ(0);
+    opacity: 1;
+  }
+}
+
