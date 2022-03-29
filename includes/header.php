@@ -44,5 +44,8 @@
       </ul>
     </div>
     <script src="js/main.js"></script>
+    <?php
+      require_once("includes/connector.php")
+    ?>
   </body>
 </html>

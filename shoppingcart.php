@@ -8,9 +8,7 @@
     <?php
       include("includes/footer.php")
     ?>
-    <?php
-      require_once("includes/connector.php")
-    ?>
+
     <script src="js/main.js"></script>
   </body>
 </html>

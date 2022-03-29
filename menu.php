@@ -1,5 +1,13 @@
 <?php
-      include("includes/header.php")
+      include("includes/header.php");
+      $sql = "SELECT * FROM menu";
+      $stmt = $connect->prepare($sql);
+      $stmt->execute();
+      $result = $stmt->fetchAll();
+
+      foreach ($result as $object) {
+        echo $object['naam'];
+      }
     ?>
     <div class="titel_menu">
       <h3>menu</h3>
