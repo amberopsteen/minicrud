@@ -38,27 +38,26 @@ document.onscroll = function () {
   }
 };
 
-let button = document.getElementById('mainButton');
+let button = document.getElementById("mainButton");
 
-let openForm = function() {
-	button.className = 'active';
+let openForm = function () {
+  button.className = "active";
 };
 
-const checkInput = function(input) {
-	if (input.value.length > 0) {
-		input.className = 'active';
-	} else {
-		input.className = '';
-	}
+const checkInput = function (input) {
+  if (input.value.length > 0) {
+    input.className = "active";
+  } else {
+    input.className = "";
+  }
 };
 
-let closeForm = function() {
-	button.className = '';
+let closeForm = function () {
+  button.className = "";
 };
 
-document.addEventListener("keyup", function(e) {
-	if (e.keyCode == 27 || e.keyCode == 13) {
-		closeForm();
-	}
+document.addEventListener("keyup", function (e) {
+  if (e.keyCode == 27 || e.keyCode == 13) {
+    closeForm();
+  }
 });
-

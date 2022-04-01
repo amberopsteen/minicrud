@@ -27,8 +27,8 @@
         <a href="menu.php" class="button">Go to dish</a>
     </div>
   <div class="card_three">
-  <h3>GRILLED BEEF STEAK</h3>
-        <a href="menu.php" class="button">Go to dish</a>
+  <h3>GRILLED HADDOCK</h3>
+        <a href="menu.php#haddock" class="button">Go to dish</a>
   </div>
 </div>
     </div>
@@ -48,6 +48,3 @@
     <?php
       include("includes/footer.php")
     ?>
-    <script src="js/main.js"></script>
-  </body>
-</html>

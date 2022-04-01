@@ -13,6 +13,13 @@
   height: 80px;
 }
 
+.navbar .navbar_content {
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+  height: auto;
+}
+
 .fade-in {
   background-color: #000000;
   animation: fade-in 1.5s cubic-bezier(0.39, 0.575, 0.565, 1) both;
@@ -22,31 +29,20 @@
   animation: fade-out 1s cubic-bezier(0.39, 0.575, 0.565, 1) both;
 }
 
-.navbar ul {
-  display: flex;
-  justify-content: flex-end;
-  flex-direction: row;
-  align-items: center;
-  list-style-type: none;
-  padding-right: 30px;
-  overflow: hidden;
-  margin-top: 10px;
-  margin-bottom: 10px;
-}
-
-.navbar ul .logo {
+/*logo navbar*/
+.navbar .navbar_content .logo {
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
-  margin-right: 38%;
-  margin-top: 5px;
+  margin-left: 20px;
+  margin-top: 15px;
   width: 180px;
   height: 47px;
   border: white;
   border-style: solid;
 }
 
-.navbar ul .logo h1 {
+.navbar .navbar_content .logo h1 {
   text-transform: uppercase;
   letter-spacing: 4px;
   font-family: Roboto, sans-serif;
@@ -57,7 +53,7 @@
   animation: text-focus-in 1s cubic-bezier(0.55, 0.085, 0.68, 0.53) both;
 }
 
-.navbar ul .logo p {
+.navbar .navbar_content .logo p {
   text-transform: uppercase;
   letter-spacing: 4px;
   font-family: Roboto, sans-serif;
@@ -67,7 +63,35 @@
     1.5s both;
 }
 
-.navbar li a {
+@media only screen and (max-width: 900px) {
+  .navbar .navbar_content .logo {
+    width: 110px;
+    height: 40px;
+  }
+  .navbar .navbar_content .logo h1 {
+    display: flex;
+    align-items: center;
+    font-size: 7px;
+    margin-top: 0px;
+  }
+  .navbar .navbar_content .logo p {
+    display: none;
+  }
+}
+
+
+.navbar .navbar_content ul {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  list-style-type: none;
+  padding-right: 30px;
+  overflow: hidden;
+  margin-top: 10px;
+  margin-bottom: 10px;
+}
+
+.navbar .navbar_content li a {
   display: block;
   text-align: center;
   padding: 14px 16px;
@@ -81,9 +105,10 @@
   transition: all 0.3s;
 }
 
-.navbar li a:hover {
+.navbar .navbar_content li a:hover {
   color: #c1b2a7;
 }
+
 
 @media only screen and (max-width: 1290px) {
   .navbar ul .logo {
@@ -104,6 +129,7 @@
 }
 
 /*index.php*/
+/*carousel*/
 .carousel {
   position: relative;
   width: 100%;
@@ -163,6 +189,7 @@
   box-shadow: inset 0px -4px 21px 0px rgba(0, 0, 0, 0.78);
 }
 
+/*chef's favorites titel*/
 .titel {
   position: relative;
   z-index: 10;
@@ -181,6 +208,7 @@
   font-family: Roboto, sans-serif;
 }
 
+/*cards about favorites*/
 .favoriet {
   display: flex;
   justify-content: center;
@@ -261,13 +289,14 @@
   justify-content: space-between;
   align-items: center;
   flex-direction: column;
-  background-image: url("../media/menu_3.jpg");
+  background-image: url("../media/menu_7.jpg");
   width: 300px;
   height: 350px;
   margin-left: 10px;
   margin-right: 10px;
 }
 
+/*background and book a table*/
 .image {
   position: relative;
   background-image: url("../media/diner4.jpg");
@@ -383,6 +412,8 @@
   font-size: 30px;
   background-color: #0c1f1d;
 }
+
+/*search button*/
 .search_button {
   position: absolute;
   right: 8%;
@@ -449,6 +480,7 @@
   transform: rotate(45deg) translate(26px, -2px);
 }
 
+/*title meat, fish of vegetables */
 .gerecht_titel {
   display: flex;
   justify-content: center;
@@ -464,6 +496,7 @@
   font-family: Roboto, sans-serif;
 }
 
+/*background menu*/
 .menu {
   display: flex;
   justify-content: center;
@@ -475,6 +508,7 @@
   column-gap: 50px;
 }
 
+/*menu cards*/
 .menu .dish {
   display: flex;
   height: 345px;
@@ -504,6 +538,7 @@
   text-transform: uppercase;
   letter-spacing: 4px;
   font-family: Roboto, sans-serif;
+  text-align: center;
 }
 
 .menu .dish .product h2 {
@@ -521,13 +556,12 @@
   margin-bottom: 60px;
   color: black;
   font-size: 0.7em;
-  text-align: center;
 }
 
 .menu .dish .product .button {
   position: absolute;
   bottom: 25px;
-  left: 36px;
+  right: 0px;
   width: 100%;
 }
 
@@ -542,7 +576,7 @@
   text-transform: uppercase;
   letter-spacing: 4px;
   font-family: Roboto, sans-serif;
-  font-size: 10px;
+  font-size: 9px;
   cursor: pointer;
   transition: all 0.4s ease-in-out;
 }
@@ -718,6 +752,7 @@
 
 .fa {
   padding: 20px;
+  padding-left: 18px;
   font-size: 40px;
   width: 50px;
   height: 50px;
@@ -876,6 +911,7 @@
 @media only screen and (max-width: 900px) {
 }
 
+/*Animations*/
 @keyframes text-focus-in {
   0% {
     filter: blur(12px);
