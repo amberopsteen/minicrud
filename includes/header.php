@@ -23,11 +23,11 @@
           <li><a href="index.php">Home</a></li>
           <li><a href="menu.php">Menu</a></li>
           <li><a href="reserveren.php">Reserve a table</a></li>
-          <div id="mainButton">
-            <div class="btn-text" onclick="openForm()">Login</div>
-            <div class="modal">
-              <div class="close-button" onclick="closeForm()">x</div>
-              <div class="form-title">Login</div>
+          <div id="login_button">
+            <div class="text_button" onclick="openForm()">Login</div>
+            <div class="login_page">
+              <div class="close_button" onclick="closeForm()">x</div>
+              <div class="form_title">Login</div>
               <div class="input-group">
                 <input type="text" id="name" onblur="checkInput(this)" />
                 <label for="name">Username</label>
@@ -45,7 +45,7 @@
           </div>
           <li>
             <div class="cart">
-            <a href="shoppingcart.php"><img src="./media/cart10.png" /></a>
+            <a href="shoppingcart.php"><img src="./media/shopping_cart.png" /></a>
             </div>
           </li>
         </ul>

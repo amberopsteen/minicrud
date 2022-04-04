@@ -38,7 +38,7 @@ document.onscroll = function () {
   }
 };
 
-let button = document.getElementById("mainButton");
+let button = document.getElementById("login_button");
 
 let openForm = function () {
   button.className = "active";

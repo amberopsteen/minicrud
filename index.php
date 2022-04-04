@@ -13,11 +13,11 @@
         <div class="third"></div>
       </div>
     </div>
-    <div class="titel">
+    <div class="title_favorites">
       <h3>chef's favorites</h3>
       </div>
-    <div class="favoriet">
-    <div class="container_card">
+    <div class="favorites">
+    <div class="favorites_content">
       <div class="card_one">
         <h3>Grilled Tournedos</h3>
         <a href="menu.php" class="button" >Go to dish</a>
@@ -32,18 +32,18 @@
   </div>
 </div>
     </div>
-    <div class="image">
-    <div class="reserveer">
-    <div class="contact1">
-      <form class="form1">
-        <h2>book your table here</h2>
-        <p type="Name:"><input placeholder="Type your name.."></input></p>
-        <p type="Email:"><input placeholder="Type your email.."></input></p>
-        <p type="Message:"><input placeholder="Type your message here.."></input></p>
-        <button>Send</button>
-      </form>
-    </div>
-    </div>
+    <div class="background_landing">
+      <div class="background_book">
+        <div class="book">
+          <form>
+            <h2>book your table here</h2>
+            <p type="Name:"><input placeholder="Type your name.."></input></p>
+            <p type="Email:"><input placeholder="Type your email.."></input></p>
+            <p type="Message:"><input placeholder="Type your message here.."></input></p>
+            <button>Send</button>
+          </form>
+        </div>
+      </div>
     </div>
     <?php
       include("includes/footer.php")

@@ -152,7 +152,7 @@
 }
 
 .carousel .arrow:hover {
-  background-image: url("../media/arrow3.png");
+  background-image: url("../media/arrow_hover.png");
 }
 
 .carousel .carousel-item {
@@ -173,23 +173,23 @@
 }
 
 .carousel .carousel-item .first {
-  background-image: url("../media/table.jpg");
+  background-image: url("../media/carousel_one.jpg");
   background-attachment: fixed;
   box-shadow: inset 0px -4px 21px 0px rgba(0, 0, 0, 0.78);
 }
 .carousel .carousel-item .second {
-  background-image: url("../media/bg3.jpg");
+  background-image: url("../media/carousel_two.jpg");
   background-attachment: fixed;
   box-shadow: inset 0px -4px 21px 0px rgba(0, 0, 0, 0.78);
 }
 .carousel .carousel-item .third {
-  background-image: url("../media/bg9.jpg");
+  background-image: url("../media/carousel_three.jpg");
   background-attachment: fixed;
   box-shadow: inset 0px -4px 21px 0px rgba(0, 0, 0, 0.78);
 }
 
 /*chef's favorites titel*/
-.titel {
+.title_favorites {
   position: relative;
   z-index: 10;
   display: flex;
@@ -198,7 +198,7 @@
   box-shadow: 1px -7px 15px 5px #000000;
 }
 
-.titel h3 {
+.title_favorites h3 {
   margin-top: 30px;
   margin-bottom: 50px;
   color: white;
@@ -208,7 +208,7 @@
 }
 
 /*cards about favorites*/
-.favoriet {
+.favorites {
   display: flex;
   justify-content: center;
   flex-direction: column;
@@ -218,7 +218,7 @@
   background-color: black;
 }
 
-.favoriet .container_card {
+.favorites .favorites_content {
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
@@ -226,7 +226,7 @@
   margin: 10px 0 80px;
 }
 
-.favoriet .container_card .button {
+.favorites .favorites_content .button {
   background-color: #202d33;
   border: none;
   color: white;
@@ -245,12 +245,12 @@
   transition: all 0.3s;
 }
 
-.favoriet .container_card .button:hover {
+.favorites .favorites_content .button:hover {
   background-color: black;
   color: white;
 }
 
-.favoriet .container_card h3 {
+.favorites .favorites_content h3 {
   color: white;
   text-transform: uppercase;
   letter-spacing: 4px;
@@ -259,36 +259,36 @@
   font-size: 15px;
 }
 
-.favoriet .container_card .card_one {
+.favorites .favorites_content .card_one {
   display: flex;
   justify-content: space-between;
   align-items: center;
   flex-direction: column;
-  background-image: url("../media/1.jpg");
+  background-image: url("../media/favorite_one.jpg");
   width: 300px;
   height: 350px;
   margin-left: 10px;
   margin-right: 10px;
 }
 
-.favoriet .container_card .card_two {
+.favorites .favorites_content .card_two {
   display: flex;
   justify-content: space-between;
   align-items: center;
   flex-direction: column;
-  background-image: url("../media/2.jpg");
+  background-image: url("../media/favorite_two.jpg");
   width: 300px;
   height: 350px;
   margin-left: 10px;
   margin-right: 10px;
 }
 
-.favoriet .container_card .card_three {
+.favorites .favorites_content .card_three {
   display: flex;
   justify-content: space-between;
   align-items: center;
   flex-direction: column;
-  background-image: url("../media/menu_7.jpg");
+  background-image: url("../media/favorite_three.jpg");
   width: 300px;
   height: 350px;
   margin-left: 10px;
@@ -296,15 +296,15 @@
 }
 
 /*background and book a table*/
-.image {
+.background_landing {
   position: relative;
-  background-image: url("../media/diner4.jpg");
+  background-image: url("../media/background_landing.jpg");
   height: 1600px;
   background-size: cover;
   box-shadow: inset 0px -4px 21px 0px rgba(0, 0, 0, 0.78);
 }
 
-.reserveer {
+.background_landing .background_book {
   position: relative;
   z-index: 80;
   top: 460px;
@@ -316,7 +316,7 @@
   box-shadow: 5px 0px 26px 17px #000000;
 }
 
-.contact1 {
+.background_landing .background_book .book {
   display: flex;
   justify-content: center;
   align-items: center;
@@ -326,7 +326,7 @@
   color: white;
 }
 
-.contact1 .form1 {
+.background_landing .background_book .book form {
   width: 540px;
   padding: 20px 30px;
   max-width: calc(100vw - 40px);
@@ -335,7 +335,7 @@
   font-family: Roboto, sans-serif;
   position: relative;
 }
-.contact1 .form1 h2 {
+.background_landing .background_book .book form h2 {
   margin: 10px 0;
   padding-bottom: 5px;
   width: 180px;
@@ -346,7 +346,7 @@
   font-size: 15px;
   color: white;
 }
-.contact1 .form1 input {
+.background_landing .background_book .book form input {
   width: 100%;
   padding: 10px;
   box-sizing: border-box;
@@ -362,18 +362,18 @@
   color: white;
 }
 
-.contact1 .form1 input:focus {
+.background_landing .background_book .book form input:focus {
   border-bottom: 2px solid #c1b2a7;
 }
 
-.contact1 .form1 p:before {
+.background_landing .background_book .book form p:before {
   content: attr(type);
   display: block;
   margin: 28px 0 0;
   font-size: 14px;
 }
 
-.contact1 .form1 button {
+.background_landing .background_book .book form button {
   padding: 8px 12px;
   margin: 8px 0 0;
   letter-spacing: 2px;
@@ -386,7 +386,7 @@
   background-color: #0c1f1d;
 }
 
-.contact1 .form1 button:hover {
+.background_landing .background_book .book form button:hover {
   background: #c1b2a7;
   color: #fff;
 }
@@ -591,25 +591,24 @@
 }
 
 /*reserveren.php*/
-.reserveren {
+.background_reserve {
   display: flex;
   justify-content: flex-end;
   align-items: center;
-  background-image: url("../media/bg1.jpeg");
+  background-image: url("../media/background_reserveren.jpeg");
   width: 100%;
   height: 100vh;
-  padding-right: 50px;
 }
 
-.contact2 {
+.background_reserve .reserve {
   width: 30%;
   height: 400px;
   color: white;
   opacity: 0.8;
 }
 
-.contact2 .form1 {
-  width: 540px;
+.background_reserve .reserve form {
+  width: 300px;
   padding: 20px 30px;
   max-width: calc(100vw - 40px);
   box-sizing: border-box;
@@ -617,7 +616,7 @@
   font-family: Roboto, sans-serif;
   position: relative;
 }
-.contact2 .form1 h2 {
+.background_reserve .reserve form h2 {
   margin: 10px 0;
   padding-bottom: 5px;
   width: 180px;
@@ -628,7 +627,7 @@
   font-size: 15px;
   color: white;
 }
-.contact2 .form1 input {
+.background_reserve .reserve form input {
   width: 100%;
   padding: 10px;
   box-sizing: border-box;
@@ -644,18 +643,18 @@
   color: white;
 }
 
-.contact2 .form1 input:focus {
+.background_reserve .reserve form input:focus {
   border-bottom: 2px solid #c1b2a7;
 }
 
-.contact2 .form1 p:before {
+.background_reserve .reserve form p:before {
   content: attr(type);
   display: block;
   margin: 28px 0 0;
   font-size: 14px;
 }
 
-.contact2 .form1 button {
+.background_reserve .reserve form button {
   padding: 8px 12px;
   margin: 8px 0 0;
   letter-spacing: 2px;
@@ -667,7 +666,7 @@
   color: white;
 }
 
-.contact2 .form1 button:hover {
+.background_reserve .reserve form button:hover {
   background: #c1b2a7;
   color: black;
 }
@@ -707,37 +706,37 @@
   color: white;
 }
 
-.footer .openingstijden {
+.footer .opening_hours {
   display: flex;
   justify-content: center;
   flex-direction: column;
 }
 
-.footer .openingstijden h3 {
+.footer .opening_hours h3 {
   letter-spacing: 2px;
   font-family: Roboto, sans-serif;
   font-size: 12px;
 }
 
-.footer .openingstijden p {
+.footer .opening_hours p {
   letter-spacing: 2px;
   font-family: Roboto, sans-serif;
   font-size: 10px;
 }
 
-.footer .locatie {
+.footer .location {
   display: flex;
   justify-content: center;
   flex-direction: column;
 }
 
-.footer .locatie h3 {
+.footer .location h3 {
   letter-spacing: 2px;
   font-family: Roboto, sans-serif;
   font-size: 12px;
 }
 
-.footer .locatie p {
+.footer .location p {
   letter-spacing: 2px;
   font-family: Roboto, sans-serif;
   font-size: 10px;
@@ -749,10 +748,10 @@
   align-items: center;
 }
 
-.fa {
+.footer .socials .fa {
   padding: 20px;
-  padding-left: 18px;
-  font-size: 40px;
+  padding-left: 17px;
+  font-size: 14px;
   width: 50px;
   height: 50px;
   text-align: center;
@@ -760,27 +759,27 @@
   margin: 5px 2px;
 }
 
-.fa:hover {
+.footer .socials .fa:hover {
   opacity: 0.7;
 }
 
-.fa-facebook {
+.footer .socials .fa-facebook {
   background-color: #202d33;
   color: white;
 }
 
-.fa-twitter {
+.footer .socials .fa-twitter {
   background-color: #202d33;
   color: white;
 }
 
-.fa-instagram {
+.footer .socials .fa-instagram {
   background-color: #202d33;
   color: white;
 }
 
 /*login button*/
-#mainButton {
+#login_button {
   color: white;
   text-transform: uppercase;
   letter-spacing: 4px;
@@ -790,21 +789,21 @@
   cursor: pointer;
 }
 
-#mainButton .btn-text {
+#login_button:hover {
+  color: #c1b2a7;
+}
+
+#login_button .text_button {
   z-index: 2;
   padding: 10px 10px;
   position: relative;
 }
 
-#mainButton:hover {
-  color: #c1b2a7;
-}
-
-#mainButton.active .modal {
+#login_button.active .login_page {
   animation: slide-in-bck-center 0.7s cubic-bezier(0.25, 0.46, 0.45, 0.94) both;
 }
 
-#mainButton .modal {
+#login_button .login_page {
   top: 0;
   left: 0;
   z-index: 3;
@@ -816,7 +815,7 @@
   align-items: center;
   justify-content: center;
   flex-direction: column;
-  background-image: url("../media/light.jpg");
+  background-image: url("../media/background_login.jpg");
   transform-origin: center center;
   -webkit-transform: scale(0.000001, 0.00001);
   -moz-transform: scale(0.000001, 0.00001);
@@ -830,7 +829,7 @@
   transition: all 0.2s ease-in;
 }
 
-.close-button {
+.close_button {
   top: 20px;
   right: 20px;
   position: absolute;
@@ -839,7 +838,7 @@
   font-family: Roboto, sans-serif;
 }
 
-.form-title {
+.form_title {
   margin-bottom: 15px;
   font-size: 30px;
 }
@@ -902,7 +901,7 @@
 }
 
 @media only screen and (max-width: 900px) {
-  #mainButton .btn-text {
+  #login_button .text_button {
     font-size: 10px;
   }
 }
