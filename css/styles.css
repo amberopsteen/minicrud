@@ -79,7 +79,6 @@
   }
 }
 
-
 .navbar .navbar_content ul {
   display: flex;
   flex-direction: row;
@@ -265,7 +264,7 @@
   justify-content: space-between;
   align-items: center;
   flex-direction: column;
-  background-image: url("../media/menu_5.jpg");
+  background-image: url("../media/1.jpg");
   width: 300px;
   height: 350px;
   margin-left: 10px;
@@ -277,7 +276,7 @@
   justify-content: space-between;
   align-items: center;
   flex-direction: column;
-  background-image: url("../media/menu_6.jpg");
+  background-image: url("../media/2.jpg");
   width: 300px;
   height: 350px;
   margin-left: 10px;
@@ -702,7 +701,7 @@
   display: flex;
   justify-content: space-around;
   width: 100%;
-  height: 150px;
+  height: 95px;
   background-color: black;
   box-shadow: 2px -4px 28px 13px #000000;
   color: white;
@@ -717,13 +716,13 @@
 .footer .openingstijden h3 {
   letter-spacing: 2px;
   font-family: Roboto, sans-serif;
-  font-size: 14px;
+  font-size: 12px;
 }
 
 .footer .openingstijden p {
   letter-spacing: 2px;
   font-family: Roboto, sans-serif;
-  font-size: 12px;
+  font-size: 10px;
 }
 
 .footer .locatie {
@@ -735,13 +734,13 @@
 .footer .locatie h3 {
   letter-spacing: 2px;
   font-family: Roboto, sans-serif;
-  font-size: 14px;
+  font-size: 12px;
 }
 
 .footer .locatie p {
   letter-spacing: 2px;
   font-family: Roboto, sans-serif;
-  font-size: 12px;
+  font-size: 10px;
 }
 
 .footer .socials {
