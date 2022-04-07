@@ -25,11 +25,11 @@
           <li><a href="reserveren.php">Reserve a table</a></li>
           <div id="login_button">
             <div class="text_button" onclick="openForm()">Login</div>
-            <div class="login_page">
+            <form action="php/login.php" method="POST" class="login_page">
               <div class="close_button" onclick="closeForm()">x</div>
               <div class="form_title">Login</div>
               <div class="input-group">
-                <input type="text" id="name" onblur="checkInput(this)" />
+                <input type="text" name="gebruikersnaam" id="name" onblur="checkInput(this)" />
                 <label for="name">Username</label>
               </div>
               <div class="input-group">
@@ -40,8 +40,8 @@
                 />
                 <label for="password">Password</label>
               </div>
-              <div class="form-button" onclick="closeForm()">Go</div>
-            </div>
+              <button type='submit' name='submit' class="form-button" onclick="closeForm()">submit</button>
+            </form>
           </div>
           <li>
             <div class="cart">
@@ -52,5 +52,5 @@
       </div>
     </div>
     <?php
-      require_once("includes/connector.php")
+      require_once("includes/connect.php")
     ?>

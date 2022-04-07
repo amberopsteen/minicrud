@@ -1,5 +1,5 @@
 <?php
-      require_once('../includes/connector.php');
+      require_once('../includes/connect.php');
 
       if(isset{$_POST['button']}) {
         $todo = $_POST['todo'];
@@ -12,5 +12,3 @@
         $stmt->execute();
       }
     ?>
-  </body>
-</html>

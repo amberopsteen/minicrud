@@ -2,8 +2,8 @@
   <div class="footer">
     <div class="opening_hours">
       <h3>Opening hours</h3>
-      <p>Monday t/m Friday: 16.00 - 23.00</p>
-      <p>Saturday t/m Sunday: 16.00 - 00.00</p>
+      <p>Monday to Friday: 16.00 - 23.00</p>
+      <p>Saturday to Sunday: 16.00 - 00.00</p>
     </div>
     <div class="socials">
       <a href="#" class="fa fa-facebook"></a>

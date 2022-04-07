@@ -964,3 +964,99 @@
     opacity: 1;
   }
 }
+
+/*admin.php*/
+.navigatiebar {
+  width: 100%;
+  height: auto;
+  background-color: black;
+}
+
+.navigatiebar .inhoud {
+  width: 100%;
+  height: auto;
+}
+
+.navigatiebar .inhoud ul {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  list-style-type: none;
+  padding-right: 30px;
+  margin-bottom: 10px;
+}
+
+.navigatiebar .inhoud li a {
+  display: block;
+  text-align: center;
+  padding: 14px 16px;
+  margin-left: 10px;
+  margin-right: 10px;
+  text-decoration: none;
+  text-transform: uppercase;
+  letter-spacing: 4px;
+  font-family: Roboto, sans-serif;
+  color: white;
+  transition: all 0.3s;
+}
+
+.navigatiebar .inhoud li a:hover {
+  color: #c1b2a7;
+}
+
+/*tabel*/
+.tabel {
+  width: 100%;
+  height: 100vh;
+  padding-left: 60px;
+  padding-right: 60px;
+  margin-top: 50px;
+  text-align: center;
+  margin-bottom: 100px;
+}
+
+.tabel h2 {
+  text-transform: uppercase;
+  letter-spacing: 4px;
+  font-family: Roboto, sans-serif;
+  font-size: 15px;
+}
+
+.tabel table, td, th {  
+  border: 1px solid #ddd;
+  text-align: left;
+  letter-spacing: 3px;
+  font-family: Roboto, sans-serif;
+  font-size: 13px;
+}
+
+.tabel table {
+  border-collapse: collapse;
+  width: 100%;
+  height: auto;
+  margin-top: 30px;
+}
+
+.tabel th, td {
+  padding: 15px;
+}
+
+.button_admin {
+  background-color: #c1b2a7;
+  border: none;
+  color: black;
+  padding: 10px 5px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  margin: 4px 2px;
+  cursor: pointer;
+  letter-spacing: 3px;
+  font-family: Roboto, sans-serif;
+  font-size: 13px;
+}
+
+.button_admin:hover{
+  background-color: black;
+  color: white;
+}
