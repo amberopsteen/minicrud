@@ -38,9 +38,9 @@
           <form>
             <h2>book your table here</h2>
             <p type="Name:"><input placeholder="Type your name.."></input></p>
-            <p type="Email:"><input placeholder="Type your email.."></input></p>
+            <p type="E-mail:"><input placeholder="Type your email.."></input></p>
             <p type="Message:"><input placeholder="Type your message here.."></input></p>
-            <button>Send</button>
+            <button>Submit</button>
           </form>
         </div>
       </div>

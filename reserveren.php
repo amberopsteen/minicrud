@@ -8,7 +8,7 @@
         <p type="Name:"><input placeholder="Type your name.."></input></p>
         <p type="Email:"><input placeholder="Type your email.."></input></p>
         <p type="Message:"><input placeholder="Type your message here.."></input></p>
-        <button>Send</button>
+        <button>Submit</button>
       </form>
     </div>
     </div>

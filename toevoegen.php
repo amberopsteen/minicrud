@@ -13,6 +13,30 @@
   <body>
     <?php
   require_once("includes/admin_header.php");
+  
 ?>
+    <div class="toevoegen_tabel">
+    <h2>Menu toevoegen</h2>
+      <table>
+        <tr>
+          <th>Gerechtnaam</th>
+          <th>Prijs €</th>
+          <th>Omschrijving</th>
+          <th>Soort gerecht</th>
+          <th>Afbeelding</th>
+          <th>Opslaan</th>
+        </tr>
+        <tr>
+          <form action="php/create.php" method="POST">
+            <td><input type="text" name="naam"></td>
+            <td><input type="text" name="prijs"></td>
+            <td><input type="text" name="omschrijving"></td>
+            <td><input type="text" name="soort_gerecht"></td>
+            <td><input type="text" name="afbeelding"></td>
+            <th><input type="submit" name="submit" class="button_admin"></th>
+          </form>
+        </tr>
+      </table>
+    </div>
   </body>
 </html>

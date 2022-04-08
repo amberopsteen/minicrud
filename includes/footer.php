@@ -1,7 +1,7 @@
 <footer>
   <div class="footer">
     <div class="opening_hours">
-      <h3>Opening hours</h3>
+      <h3>Opening hours:</h3>
       <p>Monday to Friday: 16.00 - 23.00</p>
       <p>Saturday to Sunday: 16.00 - 00.00</p>
     </div>
@@ -11,9 +11,9 @@
       <a href="#" class="fa fa-instagram"></a>
     </div>
     <div class="location">
-      <h3>Locatiebeschrijving</h3>
-      <p>Straatnaam: Heyendaalseweg 98</p>
-      <p>Postcode: 6525 EE Nijmegen</p>
+      <h3>Location:</h3>
+      <p>Street: 7963 Melrose Ave, Los Angeles</p>
+      <p>Postal Code: CA 90046-7118</p>
     </div>
   </div>
 </footer>

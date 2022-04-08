@@ -608,7 +608,7 @@
 }
 
 .background_reserve .reserve form {
-  width: 300px;
+  width: 400px;
   padding: 20px 30px;
   max-width: calc(100vw - 40px);
   box-sizing: border-box;
@@ -710,6 +710,7 @@
   display: flex;
   justify-content: center;
   flex-direction: column;
+  text-align: center;
 }
 
 .footer .opening_hours h3 {
@@ -728,6 +729,7 @@
   display: flex;
   justify-content: center;
   flex-direction: column;
+  text-align: center;
 }
 
 .footer .location h3 {
@@ -893,11 +895,7 @@
 .input-group input:focus + label,
 .input-group input.active + label {
   font-size: 12px;
-  -webkit-transform: translateY(-20px);
-  -moz-transform: translateY(-20px);
-  -ms-transform: translateY(-20px);
-  -o-transform: translateY(-20px);
-  transform: translateY(-20px);
+  animation: slide-top 0.5s cubic-bezier(0.50, 0.150, 0.200, 0.250) both;
 }
 
 @media only screen and (max-width: 900px) {
@@ -965,6 +963,30 @@
   }
 }
 
+@keyframes tracking-out-contract-bck-top {
+  0% {
+    transform: translateZ(0) translateY(0);
+    opacity: 1;
+  }
+  60% {
+    opacity: 1;
+  }
+  100% {
+    letter-spacing: -0.5em;
+    transform: translateZ(-500px) translateY(-300px);
+    opacity: 0;
+  }
+}
+
+@keyframes slide-top {
+  0% {
+    transform: translateY(0);
+  }
+  100% {
+    transform: translateY(-20px);
+  }
+}
+
 /*admin.php*/
 .navigatiebar {
   width: 100%;
@@ -1022,7 +1044,7 @@
   font-size: 15px;
 }
 
-.tabel table, td, th {  
+.tabel table td th {  
   border: 1px solid #ddd;
   text-align: left;
   letter-spacing: 3px;
@@ -1038,6 +1060,7 @@
 }
 
 .tabel th, td {
+  text-align: center;
   padding: 15px;
 }
 
@@ -1059,4 +1082,43 @@
 .button_admin:hover{
   background-color: black;
   color: white;
+}
+
+/*toevoegen.php*/
+.toevoegen_tabel {
+  width: 100%;
+  height: 100vh;
+  padding-left: 60px;
+  padding-right: 60px;
+  margin-top: 50px;
+  text-align: center;
+  margin-bottom: 100px;
+}
+
+.toevoegen_tabel h2 {
+  text-transform: uppercase;
+  letter-spacing: 4px;
+  font-family: Roboto, sans-serif;
+  font-size: 15px;
+}
+
+.toevoegen_tabel table, td, th {  
+  border: 1px solid #ddd;
+  letter-spacing: 3px;
+  font-family: Roboto, sans-serif;
+  font-size: 13px;
+  padding-top: 10px;
+  padding-bottom: 10px;
+}
+
+.toevoegen_tabel table {
+  border-collapse: collapse;
+  width: 100%;
+  height: auto;
+  margin-top: 30px;
+}
+
+input {
+  border-style: hidden;
+  padding: 20px;
 }

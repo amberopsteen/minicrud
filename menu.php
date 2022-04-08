@@ -59,7 +59,7 @@ foreach ($result as $menu) {
   <?php }  ?>
 </div>
 <div class="gerecht_titel">
-  <h3>fish dishes</h3>
+  <h3 id="haddock">fish dishes</h3>
 </div>
 <div class="menu">
   <?php foreach ($vis as $gerecht) { ?>
@@ -90,8 +90,8 @@ foreach ($result as $menu) {
     <img id="tournedos" src='media/<?php echo $gerecht['afbeelding'] ?>'/>
     </div>
     <div class="product">
-      <h2><?php echo $gerecht['naam'] ?></h2>
-      <h3>€<?php echo $gerecht['prijs'] ?></h3>
+      <h2><?php echo $gerecht['naam']?></h2>
+      <h3>€<?php echo $gerecht['prijs']?></h3>
       <p class="desc">
         <?php echo $gerecht['omschrijving']?>
       </p>
