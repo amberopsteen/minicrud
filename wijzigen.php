@@ -14,7 +14,7 @@
     <?php
   require_once("includes/admin_header.php");
 ?>
- <?php
+ <?php 
     require_once("includes/connect.php");
       $sql = 
       $stmt = $connect->prepare($sql); $stmt->execute();
