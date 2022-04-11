@@ -17,11 +17,11 @@
   
 ?>
 <?php
-/*
 require_once("includes/connect.php");
   $sql = "DELETE FROM 'menu' WHERE 'menu'.'ID' = :id";
-      $stmt = $connect->prepare($sql); $stmt->execute(); $result =
-    $stmt->fetchAll(); ?>
+  $stmt = $connect->prepare($sql); 
+  $stmt->execute(); 
+  $result = $stmt->fetchAll(); ?>
     <div class="verwijderen_tabel">
     <h2>Menu verwijderen</h2>
       <table>
@@ -47,7 +47,8 @@ require_once("includes/connect.php");
             <a href="verwijderen.php" class="button_admin">verwijderen</a>
           </th>
         </tr>
-        <?php }*/
+        <?php 
+          }
     ?>
           </form>
         </tr>

@@ -28,7 +28,7 @@
         </tr>
         <tr>
           <form action="php/create.php" method="POST">
-            <td><input type="text" name="naam" class="input_border"></td>
+            <td><input type="text" value="<?php  ?>" name="naam" class="input_border"></td>
             <td><input type="text" name="prijs" class="input_border"></td>
             <td><input type="text" name="omschrijving" class="input_border"></td>
             <td><input type="text" name="soort_gerecht" class="input_border"></td>

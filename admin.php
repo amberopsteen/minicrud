@@ -38,9 +38,9 @@
           <th><?php echo $menu['omschrijving'] ?></th>
           <th><?php echo $menu['soort_gerecht'] ?></th>
           <th><?php echo $menu['afbeelding'] ?></th>
-          <th><a href="wijzigen.php" class="button_admin">wijzigen</a></th>
+          <th><a href="wijzigen.php?id=<?php echo $menu['ID']; ?>" class="button_admin">wijzigen</a></th>
           <th>
-            <a href="verwijderen.php" class="button_admin">verwijderen</a>
+            <a href="delete.php" class="button_admin">verwijderen</a>
           </th>
         </tr>
         <?php }
