@@ -109,6 +109,7 @@
 }
 
 
+
 @media only screen and (max-width: 1290px) {
   .navbar ul .logo {
     margin-right: 30%;
@@ -216,6 +217,7 @@
   width: 100%;
   height: auto;
   background-color: black;
+  box-shadow: inset 1px 11px 18px 5px #000000;
 }
 
 .favorites .favorites_content {
@@ -295,100 +297,12 @@
   margin-right: 10px;
 }
 
-/*background and book a table*/
 .background_landing {
   position: relative;
   background-image: url("../media/background_landing.jpg");
-  height: 1600px;
+  height: 1000px;
   background-size: cover;
   box-shadow: inset 0px -4px 21px 0px rgba(0, 0, 0, 0.78);
-}
-
-.background_landing .background_book {
-  position: relative;
-  z-index: 80;
-  top: 460px;
-  display: flex;
-  justify-content: center;
-  width: 100%;
-  height: 400px;
-  background-color: black;
-  box-shadow: 5px 0px 26px 17px #000000;
-}
-
-.background_landing .background_book .book {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  width: 100%;
-  height: 400px;
-  background-color: black;
-  color: white;
-}
-
-.background_landing .background_book .book form {
-  width: 540px;
-  padding: 20px 30px;
-  max-width: calc(100vw - 40px);
-  box-sizing: border-box;
-  letter-spacing: 2px;
-  font-family: Roboto, sans-serif;
-  position: relative;
-}
-.background_landing .background_book .book form h2 {
-  margin: 10px 0;
-  padding-bottom: 5px;
-  width: 180px;
-  border-bottom: 3px solid #c1b2a7;
-  text-transform: uppercase;
-  letter-spacing: 2x;
-  font-family: Roboto, sans-serif;
-  font-size: 15px;
-  color: white;
-}
-.background_landing .background_book .book form input {
-  width: 100%;
-  padding: 10px;
-  box-sizing: border-box;
-  background: none;
-  outline: none;
-  resize: none;
-  border: 0;
-  letter-spacing: 2px;
-  font-family: Roboto, sans-serif;
-  transition: all 0.3s;
-  border-bottom: 2px solid #c1b2a7;
-  font-size: 10px;
-  color: white;
-}
-
-.background_landing .background_book .book form input:focus {
-  border-bottom: 2px solid #c1b2a7;
-}
-
-.background_landing .background_book .book form p:before {
-  content: attr(type);
-  display: block;
-  margin: 28px 0 0;
-  font-size: 14px;
-}
-
-.background_landing .background_book .book form button {
-  padding: 8px 12px;
-  margin: 8px 0 0;
-  letter-spacing: 2px;
-  font-family: Roboto, sans-serif;
-  border: 2px solid black;
-  background: 0;
-  cursor: pointer;
-  transition: all 0.3s;
-  color: white;
-  background-color: #0c1f1d;
-}
-
-.background_landing .background_book .book form button:hover {
-  background: #c1b2a7;
-  color: #fff;
 }
 
 /*menu.php*/
@@ -601,7 +515,6 @@
 }
 
 .background_reserve .reserve {
-  width: 30%;
   height: 400px;
   color: white;
   opacity: 0.8;

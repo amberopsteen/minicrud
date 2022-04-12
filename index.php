@@ -32,19 +32,7 @@
   </div>
 </div>
     </div>
-    <div class="background_landing">
-      <div class="background_book">
-        <div class="book">
-          <form>
-            <h2>book your table here</h2>
-            <p type="Name:"><input placeholder="Type your name.."></input></p>
-            <p type="E-mail:"><input placeholder="Type your email.."></input></p>
-            <p type="Message:"><input placeholder="Type your message here.."></input></p>
-            <button>Submit</button>
-          </form>
-        </div>
-      </div>
-    </div>
+    <div class="background_landing"></div>
     <?php
       include("includes/footer.php")
     ?>

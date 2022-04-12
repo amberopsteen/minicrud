@@ -13,12 +13,15 @@
   <body>
     <?php
   require_once("includes/admin_header.php");
-?>
+    ?>
     <?php
     require_once("includes/connect.php");
       $sql = "SELECT * FROM menu";
-      $stmt = $connect->prepare($sql); $stmt->execute(); $result =
-    $stmt->fetchAll(); ?>
+      $stmt = $connect->prepare($sql); 
+      $stmt->execute(); 
+      $result = $stmt->fetchAll(); 
+      ?>
+
     <div class="tabel">
       <h2>Menu wijzingen en/of verwijderen</h2>
       <table>
@@ -40,11 +43,11 @@
           <th><?php echo $menu['afbeelding'] ?></th>
           <th><a href="wijzigen.php?id=<?php echo $menu['ID']; ?>" class="button_admin">wijzigen</a></th>
           <th>
-            <a href="delete.php" class="button_admin">verwijderen</a>
+             <button type="submit" name="verwijderen" class="button_admin">verwijderen</button>
           </th>
         </tr>
         <?php }
-    ?>
+        ?>
       </table>
     </div>
   </body>

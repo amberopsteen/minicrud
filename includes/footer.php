@@ -6,9 +6,9 @@
       <p>Saturday to Sunday: 16.00 - 00.00</p>
     </div>
     <div class="socials">
-      <a href="#" class="fa fa-facebook"></a>
-      <a href="#" class="fa fa-twitter"></a>
-      <a href="#" class="fa fa-instagram"></a>
+      <a class="fa fa-facebook"></a>
+      <a class="fa fa-twitter"></a>
+      <a class="fa fa-instagram"></a>
     </div>
     <div class="location">
       <h3>Location:</h3>
