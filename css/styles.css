@@ -305,6 +305,20 @@
   box-shadow: inset 0px -4px 21px 0px rgba(0, 0, 0, 0.78);
 }
 
+@media only screen and (max-width: 690px) {
+  .favorites .favorites_content .card_one {
+    margin-bottom: 10px;
+  }
+
+  .favorites .favorites_content .card_two {
+    margin-bottom: 10px;
+  }
+
+  .favorites .favorites_content .card_three {
+    margin-bottom: 10px;
+  }
+}
+
 /*menu.php*/
 .titel_menu {
   display: flex;
@@ -1072,4 +1086,17 @@ input {
   width: 100%;
   height: auto;
   margin-top: 30px;
+}
+
+
+.input_border_id {
+  width: 48px;
+}
+
+.input_border_prijs {
+  width: 73px;
+}
+
+.input_border_gerecht {
+  width: 85px;
 }

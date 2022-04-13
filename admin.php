@@ -1,21 +1,8 @@
-<?php
-  require_once("includes/session.php");
-?>
-<!DOCTYPE html>
-<html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" href="css/styles.css" />
-    <title>Document</title>
-  </head>
+  <?php
+    require_once("php/admin_header.php");
+  ?>
   <body>
     <?php
-  require_once("includes/admin_header.php");
-    ?>
-    <?php
-    require_once("includes/connect.php");
       $sql = "SELECT * FROM menu";
       $stmt = $connect->prepare($sql); 
       $stmt->execute(); 
@@ -43,8 +30,11 @@
           <th><?php echo $menu['afbeelding'] ?></th>
           <th><a href="wijzigen.php?id=<?php echo $menu['ID']; ?>" class="button_admin">wijzigen</a></th>
           <th>
-             <button type="submit" name="verwijderen" class="button_admin">verwijderen</button>
-          </th>
+            <form method="POST" action="php/delete.php">
+              <input name="id" value="<?php echo $menu['ID']; ?>"type="hidden" readonly>
+              <input type="submit" name="verwijderen" value="verwijderen" class="button_admin">
+            </form>
+            </th>
         </tr>
         <?php }
         ?>
