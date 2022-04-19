@@ -23,7 +23,7 @@
         <a href="menu.php" class="button" >Go to dish</a>
       </div>
     <div class="card_two">
-    <h3>GRILLED PORK BELLYBUTTON</h3>
+    <h3>GRILLED PORK BELLY</h3>
         <a href="menu.php" class="button">Go to dish</a>
     </div>
   <div class="card_three">
