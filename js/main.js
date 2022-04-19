@@ -1,5 +1,6 @@
+/*carousel*/
 window.onload = function () {
-  const slides = document.getElementsByClassName("carousel-item"),
+  const slides = document.querySelectorAll(".carousel-item"),
     addActive = function (slide) {
       slide.classList.add("active");
     },
@@ -26,19 +27,21 @@ window.onload = function () {
   }, 4000);
 };
 
+/*navbar scroll*/
 document.onscroll = function () {
   let y = window.pageYOffset;
 
   if (y === 0) {
-    document.getElementById("navbar").classList.remove("fade-in");
-    document.getElementById("navbar").classList.add("fade-out");
+    document.querySelector(".navbar").classList.remove("fade-in");
+    document.querySelector(".navbar").classList.add("fade-out");
   } else {
-    document.getElementById("navbar").classList.remove("fade-out");
-    document.getElementById("navbar").classList.add("fade-in");
+    document.querySelector(".navbar").classList.remove("fade-out");
+    document.querySelector(".navbar").classList.add("fade-in");
   }
 };
 
-let button = document.getElementById("login_button");
+/*login*/
+let button = document.querySelector("#login_button");
 
 let openForm = function () {
   button.className = "active";

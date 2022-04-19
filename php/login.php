@@ -7,6 +7,7 @@
 
     header('location: ../admin.php');
     exit();
+    
   } else {
     header('location: ../index.php');
     exit();
