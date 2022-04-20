@@ -1,9 +1,14 @@
 <?php
   include("includes/header.php");
 
- $search = $_POST['search'];
+  if (!empty($_POST)){
+    $search = $_POST['search'];
+    $sql = "SELECT * FROM menu WHERE naam LIKE '%". $search. "%'";
+  } else {
+    $sql = "SELECT * FROM menu";
+  }
   
-  $sql = "SELECT * FROM menu WHERE naam LIKE '%". $search. "%'";
+  
   $stmt = $connect->prepare($sql); 
   $stmt->execute();
   $result = $stmt->fetchAll();
