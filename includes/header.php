@@ -33,6 +33,7 @@
               </div>
               <div class="input-group">
                 <input
+                  name="wachtwoord"
                   type="password"
                   id="password"
                   onblur="checkInput(this)"
