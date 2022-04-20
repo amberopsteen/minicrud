@@ -19,7 +19,7 @@
     <div class="favorites">
     <div class="favorites_content">
       <div class="card_one">
-        <h3>Grilled</h3>
+        <h3>Grilled Tournedos</h3>
         <a href="menu.php" class="button" >Go to dish</a>
       </div>
     <div class="card_two">
