@@ -1,5 +1,5 @@
 <?php 
-require_once("php/admin_header.php"); 
+require_once("includes/admin_header.php"); 
 ?>
 <body>
     <?php $id = $_GET['id'];

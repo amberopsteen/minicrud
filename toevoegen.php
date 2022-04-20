@@ -1,5 +1,5 @@
 <?php
-  require_once("php/admin_header.php");
+  require_once("includes/admin_header.php");
 ?>
   <body>
     <div class="toevoegen_tabel">

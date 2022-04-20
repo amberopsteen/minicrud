@@ -68,12 +68,14 @@
     width: 110px;
     height: 40px;
   }
+
   .navbar .navbar_content .logo h1 {
     display: flex;
     align-items: center;
     font-size: 7px;
     margin-top: 0px;
   }
+  
   .navbar .navbar_content .logo p {
     display: none;
   }
@@ -107,8 +109,6 @@
 .navbar .navbar_content li a:hover {
   color: #c1b2a7;
 }
-
-
 
 @media only screen and (max-width: 1290px) {
   .navbar ul .logo {
@@ -165,10 +165,12 @@
   top: 0;
   left: 100%;
 }
+
 .carousel .carousel-item.active {
   left: 0;
   transition: all 0.8s ease-out;
 }
+
 .carousel .carousel-item div {
   height: 100%;
 }
@@ -178,11 +180,13 @@
   background-attachment: fixed;
   box-shadow: inset 0px -4px 21px 0px rgba(0, 0, 0, 0.78);
 }
+
 .carousel .carousel-item .second {
   background-image: url("../media/carousel_two.jpg");
   background-attachment: fixed;
   box-shadow: inset 0px -4px 21px 0px rgba(0, 0, 0, 0.78);
 }
+
 .carousel .carousel-item .third {
   background-image: url("../media/carousel_three.jpg");
   background-attachment: fixed;
@@ -359,15 +363,19 @@
   font-size: 0.75rem;
   line-height: 25px;
 }
+
 .search-box input[type="text"]:hover {
   cursor: pointer;
 }
+
 .search-box input[type="text"]:hover:focus {
   cursor: text;
 }
+
 .search-box input[type="text"]:hover + span {
   background: rgba(255, 255, 255, 0.2);
 }
+
 .search-box input[type="text"]:focus {
   width: 200px;
   padding: 0 10px;
@@ -376,14 +384,17 @@
   background: none;
   color: white;
 }
+
 .search-box input[type="text"]:focus + span {
   width: 200px;
 }
+
 .search-box input[type="text"]:focus + span::before {
   width: 2px;
   opacity: 0;
   transition: all 0.25s ease-in;
 }
+
 .search-box input[type="text"] + span {
   z-index: -1;
   position: absolute;
@@ -395,6 +406,7 @@
   border-radius: 25px;
   left: 0;
 }
+
 .search-box input[type="text"] + span::before {
   transition: all 0.25s ease-in 0.5s;
   transform-origin: left top;
@@ -543,6 +555,7 @@
   font-family: Roboto, sans-serif;
   position: relative;
 }
+
 .background_reserve .reserve form h2 {
   margin: 10px 0;
   padding-bottom: 5px;
@@ -554,6 +567,7 @@
   font-size: 15px;
   color: white;
 }
+
 .background_reserve .reserve form input {
   width: 100%;
   padding: 10px;
@@ -799,6 +813,7 @@
   position: relative;
   margin-bottom: 15px;
 }
+
 .input-group input {
   width: 100%;
   color: white;
@@ -812,6 +827,7 @@
   border-bottom: solid 1px white;
   background-color: transparent;
 }
+
 .input-group input + label {
   left: 0;
   top: 20px;
@@ -829,9 +845,6 @@
   #login_button .text_button {
     font-size: 10px;
   }
-}
-
-@media only screen and (max-width: 900px) {
 }
 
 /*Animations*/
