@@ -1,8 +1,9 @@
 <?php
   include("includes/header.php");
 
+ $search = $_POST['search'];
   
-  $sql = "SELECT * FROM menu";
+  $sql = "SELECT * FROM menu WHERE naam LIKE '%". $search. "%'";
   $stmt = $connect->prepare($sql); 
   $stmt->execute();
   $result = $stmt->fetchAll();
@@ -30,12 +31,14 @@ foreach ($result as $menu) {
 <div class="titel_menu">
   <h3>menu</h3>
 </div>
+<form action="menu.php" method="POST">
 <div class="search_button">
   <div class="search-box">
-    <input type="text" />
+    <input name="search" type="text" />
     <span></span>
   </div>
 </div>
+</form>
 <div class="gerecht_titel">
   <h3>meat dishes</h3>
 </div>
