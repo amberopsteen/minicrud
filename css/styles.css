@@ -81,6 +81,21 @@
   }
 }
 
+@media only screen and (max-width: 680px) {
+
+  .navbar .navbar_content .logo {
+    display: none;
+  }
+
+  .navbar .navbar_content .logo h1 {
+   display: none;
+  }
+  
+  .navbar .navbar_content .logo p {
+   display: none;
+  }
+}
+
 .navbar .navbar_content ul {
   display: flex;
   flex-direction: row;
@@ -127,6 +142,13 @@
     font-size: 10px;
   }
 }
+
+@media only screen and (max-width: 680px) {
+  .navbar li a {
+    font-size: 8px;
+  }
+}
+
 
 /*index.php*/
 /*carousel*/
